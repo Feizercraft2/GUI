@@ -1,1 +1,1 @@
-# GUI
+# GUI code and waypoint files
