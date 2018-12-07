@@ -1,0 +1,8 @@
+include/qt_ros/main_window.hpp
+include/qt_ros/qnode.hpp
+resources/images.qrc
+resources/images/icon.png
+src/main.cpp
+src/main_window.cpp
+src/qnode.cpp
+ui/main_window.ui

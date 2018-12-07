@@ -1,0 +1,17 @@
+-I/opt/ros/kinetic/include
+-I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/home/danas/Qt_ws/build/qt_ros
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="qt_ros"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-DQT_NO_KEYWORDS
+-o
+/home/danas/Qt_ws/build/qt_ros/include/qt_ros/moc_qnode.cxx
+/home/danas/Qt_ws/src/qt_ros/include/qt_ros/qnode.hpp

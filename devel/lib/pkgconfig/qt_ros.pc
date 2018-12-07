@@ -1,0 +1,8 @@
+prefix=/home/danas/Qt_ws/devel
+
+Name: qt_ros
+Description: Description of qt_ros
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/danas/Qt_ws/devel/lib 
+Requires: 

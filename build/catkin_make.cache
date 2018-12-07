@@ -1,0 +1,2 @@
+qt_ros
+-DCATKIN_DEVEL_PREFIX=/home/danas/Qt_ws/devel -DCMAKE_INSTALL_PREFIX=/home/danas/Qt_ws/install -G Unix Makefiles
