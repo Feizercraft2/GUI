@@ -2033,6 +2033,7 @@ qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/types
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/std_msgs/Int16.h
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 qt_ros/CMakeFiles/qt_ros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h

@@ -49,7 +49,8 @@ public:
 	//bool init();
 	//bool init(const std::string &master_url, const std::string &host_url);
 	void run();
-  double publish(const double &latitudeCoordinate, const double &longitudeCoordinate, const int &toggler);
+  //double publish(const double &latitudeCoordinate, const double &longitudeCoordinate, const int &toggler);
+  int publish(const int &toggler);
 
 
 	/*********************

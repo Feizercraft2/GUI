@@ -17,7 +17,10 @@ double latitudeWindow;
 int toggler=0;
 double tempLatitude=0;
 double tempLongitude=0;
-QFile file("2018_12_06_1603.txt"); //****************Needs to be changed everytime when creating a new waypoint .txt file
+QDateTime dateTime = QDateTime::currentDateTime();
+QString dateTimeString = dateTime.toString();
+
+QFile file(dateTimeString + ".txt"); //****************Needs to be changed everytime when creating a new waypoint .txt file
 QTextStream stream(&file);
 //double newLongitude;
 //double newLatitude;
@@ -84,7 +87,7 @@ void MainWindow::writeToFile() {
     if(file.open(QIODevice::Append | QIODevice::Text)) {
 		//QTextStream stream(&file);
 
-		stream << latitudeWindow << " " << longitudeWindow << " " << toggler << "\n";
+		stream << latitudeWindow << " " << longitudeWindow << "\n";
 
 		//stream.flush();
 		//file.close();
@@ -143,13 +146,15 @@ void MainWindow::on_button_connect_clicked(bool check ) {
 		}
 		else {
 			if (tempLatitude == latitudeWindow && tempLongitude == longitudeWindow) {
-				qnode.publish(latitudeWindow,longitudeWindow,toggler);
+				//qnode.publish(latitudeWindow,longitudeWindow,toggler);
+				qnode.publish(toggler);
 			}
 			else {
 				tempLatitude = latitudeWindow;
 				tempLongitude = longitudeWindow;
 				writeToFile();
-				qnode.publish(latitudeWindow,longitudeWindow,toggler);
+				//qnode.publish(latitudeWindow,longitudeWindow,toggler);
+				qnode.publish(toggler);
 			}
 			//ui.enteredCoords->addItem();
 		}

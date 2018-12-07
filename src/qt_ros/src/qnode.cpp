@@ -17,6 +17,7 @@
 #include <geometry_msgs/Vector3.h>
 #include <sstream>
 #include "../include/qt_ros/qnode.hpp"
+#include <std_msgs/Int16.h>
 
 
 /*****************************************************************************
@@ -76,7 +77,7 @@ bool QNode::init(const std::string &master_url, const std::string &host_url) {
 }
 */
 
-double QNode::publish(const double &latitudeCoordinate, const double &longitudeCoordinate, const int &toggler) {
+/*double QNode::publish(const double &latitudeCoordinate, const double &longitudeCoordinate, const int &toggler) {
 	ros::init(init_argc,init_argv,"qt_ros");
 	latitude = latitudeCoordinate;
 	longitude = longitudeCoordinate;
@@ -86,16 +87,29 @@ double QNode::publish(const double &latitudeCoordinate, const double &longitudeC
 	Publish = n.advertise<geometry_msgs::Vector3>("coordinates", 1);
 	start();
 	return true;
+}*/
+
+int QNode::publish(const int &toggler) {
+	ros::init(init_argc,init_argv, "qt_ros");
+	toggle = toggler;
+	ros::start();
+	ros::NodeHandle n;
+	//Publish = n.advertise<geometry_msgs::Vector3>("coordinates", 1);
+	Publish = n.advertise<std_msgs::Int16>("coordinates", 1);
+	start();
+	return true;
 }
 
 void QNode::run() {
 	ros::Rate loop_rate(1);
 	while ( ros::ok() ) {
 
-		geometry_msgs::Vector3 msg;
-		msg.x = latitude;
-		msg.y = longitude;
-		msg.z = toggle;
+		//geometry_msgs::Vector3 msg;
+		//msg.x = latitude;
+		//msg.y = longitude;
+		//msg.z = toggle;
+		std_msgs::Int16 msg;
+		msg.data = toggle;
 		Publish.publish(msg);
 		ros::spinOnce();
 		loop_rate.sleep();
