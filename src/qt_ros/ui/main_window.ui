@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>724</width>
-    <height>192</height>
+    <width>733</width>
+    <height>263</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,14 +44,14 @@
           <item>
            <widget class="QLineEdit" name="input_box_lat">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
+              <width>300</width>
               <height>16777215</height>
              </size>
             </property>
@@ -70,7 +70,7 @@
            <widget class="QLineEdit" name="input_box_long">
             <property name="maximumSize">
              <size>
-              <width>220</width>
+              <width>300</width>
               <height>16777215</height>
              </size>
             </property>
@@ -96,7 +96,7 @@
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>50</width>
+              <width>60</width>
               <height>58</height>
              </size>
             </property>
@@ -153,7 +153,7 @@
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>20</width>
+                  <width>30</width>
                   <height>40</height>
                  </size>
                 </property>
@@ -166,7 +166,7 @@
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>20</width>
+                  <width>30</width>
                   <height>40</height>
                  </size>
                 </property>
@@ -179,7 +179,7 @@
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>20</width>
+                  <width>30</width>
                   <height>40</height>
                  </size>
                 </property>

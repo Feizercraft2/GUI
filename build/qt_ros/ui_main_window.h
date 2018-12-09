@@ -58,7 +58,7 @@ public:
         if (MainWindowDesign->objectName().isEmpty())
             MainWindowDesign->setObjectName(QString::fromUtf8("MainWindowDesign"));
         MainWindowDesign->setEnabled(true);
-        MainWindowDesign->resize(724, 192);
+        MainWindowDesign->resize(733, 263);
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/images/icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindowDesign->setWindowIcon(icon);
@@ -84,12 +84,12 @@ public:
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         input_box_lat = new QLineEdit(centralwidget);
         input_box_lat->setObjectName(QString::fromUtf8("input_box_lat"));
-        QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(input_box_lat->sizePolicy().hasHeightForWidth());
         input_box_lat->setSizePolicy(sizePolicy);
-        input_box_lat->setMaximumSize(QSize(220, 16777215));
+        input_box_lat->setMaximumSize(QSize(300, 16777215));
         input_box_lat->setInputMethodHints(Qt::ImhDigitsOnly);
         input_box_lat->setMaxLength(13);
 
@@ -97,7 +97,7 @@ public:
 
         input_box_long = new QLineEdit(centralwidget);
         input_box_long->setObjectName(QString::fromUtf8("input_box_long"));
-        input_box_long->setMaximumSize(QSize(220, 16777215));
+        input_box_long->setMaximumSize(QSize(300, 16777215));
         input_box_long->setInputMethodHints(Qt::ImhDigitsOnly);
         input_box_long->setMaxLength(13);
 
@@ -108,7 +108,7 @@ public:
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        verticalSpacer_2 = new QSpacerItem(50, 58, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_2 = new QSpacerItem(60, 58, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         horizontalLayout_5->addItem(verticalSpacer_2);
 
@@ -117,8 +117,11 @@ public:
 
         quit_button = new QPushButton(centralwidget);
         quit_button->setObjectName(QString::fromUtf8("quit_button"));
-        sizePolicy.setHeightForWidth(quit_button->sizePolicy().hasHeightForWidth());
-        quit_button->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(quit_button->sizePolicy().hasHeightForWidth());
+        quit_button->setSizePolicy(sizePolicy1);
         quit_button->setMaximumSize(QSize(200, 25));
 
         horizontalLayout_2->addWidget(quit_button);
@@ -134,25 +137,22 @@ public:
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         button_connect = new QPushButton(centralwidget);
         button_connect->setObjectName(QString::fromUtf8("button_connect"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(button_connect->sizePolicy().hasHeightForWidth());
-        button_connect->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(button_connect->sizePolicy().hasHeightForWidth());
+        button_connect->setSizePolicy(sizePolicy);
 
         horizontalLayout_4->addWidget(button_connect);
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_4 = new QSpacerItem(30, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         horizontalLayout_3->addItem(verticalSpacer_4);
 
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_3 = new QSpacerItem(30, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         horizontalLayout_3->addItem(verticalSpacer_3);
 
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer = new QSpacerItem(30, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         horizontalLayout_3->addItem(verticalSpacer);
 
